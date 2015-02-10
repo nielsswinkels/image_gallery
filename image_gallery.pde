@@ -26,7 +26,10 @@ void draw() {
   
   if(morphImg == null || frameCount%50 == 0)
   morphImg = loadImage(morphDir + "/" + morphFiles[int(random(morphFiles.length))]);
-  image(morphImg, width/2.0 - (morphImg.width/2.0), height/2.0-(morphImg.height/2.0));
+  //image(morphImg, width/2.0 - (morphImg.width/2.0), height/2.0-(morphImg.height/2.0));
+  
+  println(width + "  "+height*(width/morphImg.width));
+  image(morphImg, 0,0,width, height*(width/morphImg.width));
 }
 
 String[] listFileNames(String dir) {
