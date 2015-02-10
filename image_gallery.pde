@@ -28,8 +28,7 @@ void draw() {
   morphImg = loadImage(morphDir + "/" + morphFiles[int(random(morphFiles.length))]);
   //image(morphImg, width/2.0 - (morphImg.width/2.0), height/2.0-(morphImg.height/2.0));
   
-  println(width + "  "+morphImg.height*(width/(1.0*morphImg.width)));
-  println(morphImg.width);
+  //println(width + "  "+morphImg.height*(width/(1.0*morphImg.width)));
   image(morphImg, 0,0,width, morphImg.height*(width/(1.0*morphImg.width)));
 }
 
